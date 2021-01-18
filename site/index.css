@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;800&display=swap');
+
+/* Variables */
+:root {
+  --small-breakpoint: 900px;
+
+  --gray-1: hsl(210, 20%, 10%);
+  --gray-3: hsl(210, 10%, 20%);
+  --gray-5: hsl(210, 10%, 35%);
+  --gray-7: hsl(210, 10%, 50%);
+  --gray-9: hsl(210, 10%, 65%);
+
+  /* Scale */
+  --xxs: 4px;
+  --xs: 8px;
+  --small: 12px;
+  --baseline: 16px;
+  --large: 24px;
+  --xl: 32px;
+  --xxl: 48px;
+  --xxxl: 64px;
+  --xxxxl: 96px;
+  --xxxxxl: 128px;
+  --xxxxxxl: 192px;
+  --xxxxxxxl: 256px;
+  --xxxxxxxxl: 384px;
+  --xxxxxxxxxl: 512px;
+
+  /* Type */
+  --font-xs: 12px;
+  --font-small: 14px;
+  --font-baseline: 16px;
+  --font-large: 18px;
+  --font-xl: 20px;
+  --font-xxl: 24px;
+  --font-xxxl: 30px;
+  --font-xxxxl: 36px;
+  --font-xxxxxl: 48px;
+  --font-xxxxxxl: 60px;
+  --font-xxxxxxxl: 72px;
+}
+
+/* Resets */
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1 {
+  font-size: var(--font-xxxxxxxl);
+  font-family: 'EB Garamond', serif;
+  margin-top: 0;
+  margin-bottom: var(--xxs);
+  text-rendering: optimizeLegibility;
+  font-weight: 800;
+  color: #582a72;
+}
+h1 + p {
+  margin-top: -3px; /* Visual alignment */
+  margin-left: 3px; /* Visual alignment */
+  font-family: 'EB Garamond', serif;
+  text-transform: uppercase;
+  font-size: var(--font-xxl);
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--gray-9);
+}
+h2 {
+  font-size: var(--font-xxxl);
+  text-transform: uppercase;
+  font-family: 'EB Garamond', serif;
+  margin-top: var(--large);
+  margin-bottom: var(--baseline);
+  color: var(--gray-3);
+}
+h3 {
+  font-size: var(--font-xxl);
+  color: var(--gray-1);
+}
+li, p {
+  margin-bottom: var(--baseline);
+  color: var(--gray-5);
+  line-height: 1.5;
+  max-width: var(--xxxxxxxxxl);
+}
+address {
+  font-size: var(--font-large);
+  text-decoration: underline;
+}
+body {
+  font-family: 'EB Garamond', serif;
+  font-size: var(--font-baseline);
+  color: var(--gray-1);
+  display: flex;
+  justify-content: center;
+  margin: var(--xxl);
+}
+@media screen and (max-width: 900px){
+  body {
+    font-size: var(--font-small);
+    margin: var(--large);
+  }
+  h1 {
+    font-size: var(--font-xxxxxl);
+  }
+  h1 + p {
+    font-size: var(--font-xl);
+    line-height: 1.1;
+  }
+  h2 {
+    font-size: var(--font-xxl);
+  }
+  aside h2 {
+    font-size: var(--font-xxl);
+  }
+  h3 {
+    font-size: var(--font-large);
+  }
+}
